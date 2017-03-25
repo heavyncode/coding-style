@@ -1181,7 +1181,7 @@ var me = $(this); // Bad example of comment
 ```
 
 <a name="references"></a>
-## 8. References
+## 7. References
 
 * [Code Guide by @mdo](https://github.com/mdo/code-guide)
 * [idiomatic CSS](https://github.com/necolas/idiomatic-css/)
