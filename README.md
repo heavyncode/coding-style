@@ -1,19 +1,6 @@
-<p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/3603793/15085619/b7b0423a-13b1-11e6-8e47-e8ed523f6ff6.png" width="200">
-</p>
-
-# My Coding Style
-
-[![license](https://img.shields.io/github/license/LFeh/coding-style.svg)](./license.md)
-[![GitHub contributors](https://img.shields.io/github/contributors/LFeh/coding-style.svg)](https://github.com/LFeh/coding-style/graphs/contributors)
+# Coding Style
 
 > "Every line of code should appear to be written by a single person, no matter the number of contributors." - Chinese Proverb.
-
-The following document describes the rules of writing in development languages that I use: HTML, CSS and JavaScript.
-
-The idea of this repository is not to be a complete code guide. Only to have a place for myself and other developers who participate in my projects able to inform the coding standards used.
-
-As this is a new document, some rules may not have been applied in old projects.
 
 This is a live document and changes can occur at any time.
 
@@ -523,19 +510,38 @@ Use lowercase, shorthand hex values and avoid specifying units is zero-values.
 <a name="css-order"></a>
 ### 4.2. CSS Declaration Order
 
-The declarations should be added in alphabetical order.
+The declarations should be added in group order.
 
 ```css
 /* Good */
 .selector-1 {
-  background: #fff;
-  border: #333 solid 1px;
-  color: #333;
+  /* Positioning */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+
+  /* Box-model */
   display: block;
-  height: 200px;
-  margin: 5px;
-  padding: 5px;
-  width: 200px;
+  float: right;
+  width: 100px;
+  height: 100px;
+
+  /* Typography */
+  font: normal 13px "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  color: #333;
+  text-align: center;
+
+  /* Visual */
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+
+  /* Misc */
+  opacity: 1;
 }
 
 /* Bad */
@@ -668,7 +674,8 @@ Nest only when need change the class comportament with interference for other cl
 .progress.active .progress-bar .progress-item span { ... }
 ```
 
-Always minify the CSS code. Task builders like [Grunt](http://gruntjs.com/) leaves this easier.
+Always minify the CSS code. Task builders like [Gulp.js](gulpjs.com/
+) leaves this easier.
 
 ```css
 <!-- Good -->
