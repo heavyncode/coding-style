@@ -12,7 +12,6 @@ This is a live document and changes can occur at any time.
 1. [CSS](#css) 
 1. [CSS Preprocessors](#css-preprocessors) 
 1. [JavaScript](#js)
-1. [Boilerplate](#boilerplate) 
 1. [References](#references)
 1. [Translations](#translations) 
 
@@ -1179,18 +1178,7 @@ var me = $(this);
 
 // Bad
 var me = $(this); // Bad example of comment
-```
-
-<a name="boilerplate"></a>
-## 7. Boilerplate
-
-I have a boilerplate using this coding style. 
-
-<p>
-  <img src="https://cloud.githubusercontent.com/assets/3603793/14390922/a999424c-fd8f-11e5-8fbb-ab908a1d4740.png" width="100">
-</p>
-
-It's call [Kratos Boilerplate](https://github.com/LFeh/kratos-boilerplate).
+``
 
 <a name="references"></a>
 ## 8. References
@@ -1200,9 +1188,4 @@ It's call [Kratos Boilerplate](https://github.com/LFeh/kratos-boilerplate).
 * [idiomatic.js](https://github.com/rwldrn/idiomatic.js/)
 * [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/)
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/JavaScript)
-
-<a name="translations"></a>
-## 9. Translations
-
-* [Português (Brasil)](/translations/pt-BR/)
-* [Russian (by Vbifonixor)](https://github.com/vbifonixor/coding-style) 
+* [Felipe Fialho Coding Style](https://github.com/LFeh/coding-style)
