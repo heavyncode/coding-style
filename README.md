@@ -1178,7 +1178,7 @@ var me = $(this);
 
 // Bad
 var me = $(this); // Bad example of comment
-``
+```
 
 <a name="references"></a>
 ## 8. References
